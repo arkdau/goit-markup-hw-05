@@ -217,6 +217,7 @@ nav.flex {
   margin-bottom: 10px;
   letter-spacing: 0.03em;
   text-align: left;
+  text-transform: uppercase;
 }
 
 .item-attr-text {
@@ -233,6 +234,22 @@ nav.flex {
 
 .No-1 {
   padding-top: 0;
+}
+
+.thumb {
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;  
+  text-align: center;
+  color: var(--color-text-light);
+  line-height: 4.375em;
+  margin: 0;
+  background: rgba(47, 48, 58, 0.8);
 }
 
 /*************************************

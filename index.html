@@ -65,9 +65,16 @@
             EFEKTYWNE ROZWIĄZANIA<br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button type="button" class="btn-order-svc">Zamów usługe</button>
+          <button type="button" class="btn-order-svc" data-modal-open>Zamów usługe</button>
         </div>
       </section>
+    <!-- modal-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>X</button> 
+      </div>
+    </div>
+    <!-- end modal-->
       <!-- Section 0 - Nasze atrybuty  -->
       <section class="section">
         <div class="container">
@@ -524,6 +531,7 @@
       </div>
     </section>
     <!-- end Nasi klienci -->
+
     <!-- footer -->
     <footer class="footer">
       <div class="container flex">
@@ -603,6 +611,7 @@
       </div>
     </footer>
     <!-- end footer -->
+    <script src="./js/modal.js"></script>
   </body>
   <!-- body -->
 </html>

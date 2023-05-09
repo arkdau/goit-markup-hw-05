@@ -131,12 +131,40 @@ nav.flex {
   letter-spacing: 0.02em;
 }
 
-.menu-item a {
+/* .menu-item a { */
+/* color: var(--color-text-dark); */
+/* } */
+
+.menu-link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
   color: var(--color-text-dark);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-item a:hover {
+.menu-item a:hover,
+.menu-item a:focus,
+.menu-item a:active {
   color: var(--color-text-primary);
+}
+
+.is-active {
+  position: relative;
+  color: var(--color-text-primary);
+}
+
+.is-active::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 43px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-text-primary);
+  border-radius: 2px;
 }
 
 .contact-icon-envelope {
@@ -244,7 +272,7 @@ nav.flex {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;  
+  bottom: 0;
   text-align: center;
   color: var(--color-text-light);
   line-height: 4.375em;
@@ -339,9 +367,9 @@ nav.flex {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-figure .card-1 {
-  display: block;
-}
+/* figure .card-1 { */
+  /* display: block; */
+/* } */
 
 .card-1-desc {
   padding-top: 20px;
@@ -365,6 +393,41 @@ figure .card-1 {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.card-1-img {
+  position: relative;
+  width: 370px;
+  /* height: 274px; */
+  height: 294px;
+  overflow: hidden;
+}
+
+.card-1-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+}
+
+.card-1-item:hover .card-1-overlay {
+  transform: translateY(0);
+}
+
+.card-1-overlay > p {
+  color: var(--color-text-light);
+  font-size: 1.125em;
+  line-height: 1.6;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 /*************************************

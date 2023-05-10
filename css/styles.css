@@ -362,16 +362,22 @@ nav.flex {
   background: #ffffff;
 }
 
-.card-1:hover {
+/* .card-1:hover { */
+  /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), */
+    /* 1px 4px 6px rgba(0, 0, 0, 0.16); */
+/* } */
+
+.card__shadow:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+
 /* figure .card-1 { */
-  /* display: block; */
+/* display: block; */
 /* } */
 
-.card-1-desc {
+.card__caption--desc {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -380,7 +386,16 @@ nav.flex {
   border-right: 1px solid #eeeeee;
 }
 
-.card-1-hdr {
+/* .card-1-desc { */
+  /* padding-top: 20px; */
+  /* padding-bottom: 20px; */
+  /* padding-left: 24px; */
+  /* border-left: 1px solid #eeeeee; */
+  /* border-bottom: 1px solid #eeeeee; */
+  /* border-right: 1px solid #eeeeee; */
+/* } */
+
+.card__caption--hdr {
   font-weight: 700;
   font-size: 1.125em;
   line-height: 2;
@@ -389,13 +404,29 @@ nav.flex {
   text-align: left;
 }
 
-.card-1-text {
+/* .card-1-hdr { */
+  /* font-weight: 700; */
+  /* font-size: 1.125em; */
+  /* line-height: 2; */
+  /* letter-spacing: 0.06em; */
+  /* text-transform: capitalize; */
+  /* text-align: left; */
+/* } */
+
+.card__caption--text {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
-.card-1-img {
+
+/* .card-1-text { */
+  /* line-height: 1.875; */
+  /* letter-spacing: 0.03em; */
+  /* color: #757575; */
+/* } */
+
+.card__image {
   position: relative;
   width: 370px;
   /* height: 274px; */
@@ -403,7 +434,7 @@ nav.flex {
   overflow: hidden;
 }
 
-.card-1-overlay {
+.card__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -418,17 +449,43 @@ nav.flex {
   transition-timing-function: ease;
 }
 
-.card-1-item:hover .card-1-overlay {
+.card__item:hover .card__overlay {
   transform: translateY(0);
 }
 
-.card-1-overlay > p {
+.card__overlay--text  {
   color: var(--color-text-light);
   font-size: 1.125em;
   line-height: 1.6;
   margin-left: 24px;
   margin-right: 24px;
 }
+
+/******************************************************************************************
+*
+*/
+
+/* .my_card { */
+  /* width: 270px; */
+  /* background: #ffffff; */
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), */
+    /* 0 2px 1px rgba(0, 0, 0, 0.2); */
+  /* border-radius: 0 0 4px 4px; */
+/* } */
+
+/* .my_card--width { */
+  /* width: 370px; */
+/* } */
+
+/* .my_card__shadow { */
+  /* box-shadow: 0 0 0 rgba(0, 0, 0), 0 0 0 rgba(0, 0, 0), */
+    /* 0 0 0 rgba(0, 0, 0); */
+/* } */
+
+/* .card-1 { */
+  /* width: 370px; */
+  /* background: #ffffff; */
+/* } */
 
 /*************************************
  *  Page - portfolio

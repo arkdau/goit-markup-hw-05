@@ -21,67 +21,69 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="./css/styles.css" rel="stylesheet" />
+    <!-- <link href="./css/styles.css" rel="stylesheet" /> -->
   </head>
   <!-- body -->
   <body>
     <!-- header  -->
     <header>
-      <div class="container flex">
-        <nav class="flex">
-          <a href="" class="logo-fonts">Web<span class="studio-color">Studio</span></a>
-          <ul class="flex menu-item">
+      <div class="container flex gap-0 ms-0-a">
+        <nav class="flex gap-93">
+          <a href="" class="logo__fonts">Web<span class="c">Studio</span></a>
+          <ul class="flex gap-46">
             <li>
-              <a href="./index.html" class="menu-link">Agencja</a>
+            <a href="./index.html" class="menu__link fw-5 fz-s lh-x1142 lts-s">Agencja</a>
+            <li>
+              <a href="./portfolio.html" class="menu__link fw-5 fz-s lh-x1142 lts-s is-active">Portfolio</a>
             </li>
-            <li>
-              <a href="./portfolio.html" class="menu-link is-active">Portfolio</a>
-            </li>
-            <li>
-              <a href="#" class="menu-link">Kontakt</a>
+            <li> 
+              <a href="#" class="menu__link fw-5 fz-s lh-x1142 lts-s">Kontakt</a>
             </li>
           </ul>
         </nav>
         <ul class="flex">
           <li>
-            <a href="mailto:info@devstudio.com" class="contact-link">
-              <svg width="16" height="12" class="contact-icon-envelope">
+            <div class="contact">
+              <a href="mailto:info@devstudio.com" class="contact__link">
+              <svg width="16" height="12" class="contact__icon">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
-              ><span>info@devstudio.com</span>
-            </a>
+                >info@devstudio.com
+              </a>
+            </div>
           </li>
           <li>
-            <a href="tel:+48&nbsp111&nbsp111&nbsp111" class="contact-link">
-              <svg width="10" height="16" class="contact-icon-smartphone">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
-              ><span>+48 111 111 111</span>
-            </a>
+            <div class="contact">
+              <a href="tel:+48&nbsp111&nbsp111&nbsp111" class="contact__link">
+                <svg width="10" height="16" class="contact__icon">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg
+                >+48 111 111 111
+              </a>
+            </div>
           </li>
         </ul>
       </div>
     </header>
-
     <!-- end header -->
     <!-- Section 3 - portfolio -->
     <section class="section">
       <!-- container -->
-      <div class="container">
+      <div class="container ms-0-a">
         <!-- ul - buttons -->
-        <ul class="flex btn-nav">
+        <ul class="flex btn jc-c">
           <li>
-            <button type="button" class="btn-nav-font btn-nav-bg">Wszystkie</button>
+            <button type="button" class="btn__body">Wszystkie
+            </button>
+          </li>
+            <button type="button" class="btn__body">Strony</button>
           </li>
           <li>
-            <button type="button" class="btn-nav-font btn-nav-bg">Strony</button>
+            <button type="button" class="btn__body">Aplikacje</button>
           </li>
           <li>
-            <button type="button" class="btn-nav-font btn-nav-bg">Aplikacje</button>
+            <button type="button" class="btn__body">Dizajn</button>
           </li>
           <li>
-            <button type="button" class="btn-nav-font btn-nav-bg">Dizajn</button>
-          </li>
-          <li>
-            <button type="button" class="btn-nav-font btn-nav-bg">Marketing</button>
+            <button type="button" class="btn__body">Marketing</button>
           </li>
         </ul>
         <!-- End -ul- buttons -->
@@ -97,19 +99,16 @@
                   height="294"
                 />
                 <div class="card__overlay">
-                  <p class="card__overlay--text">
-                    Technocrack jest popularną<br />
-                    platformą wykorzystywaną do<br />
-                    rozpowszechniania koronawirusa.<br />
-                    Firmy wykorzystują tę platformę do<br />
-                    celów szpiegowskich i ataków na niezabezpieczone serwery<br />
-                    konkurencji.
+                  <p class="card__overlay--text mlr-24">
+                    Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
+                    koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji.
                   </p>
                 </div>
               </div>
-              <figcaption class="card-caption__desc">
-                <h3 class="card-caption__hdr">Technocrack</h3>
-                <p class="card-caption__text">Strona internetowa</p>
+              <figcaption class="card-caption__desc ptb-20 plr-24">
+                <h3 class="card-caption__hdr fw-7 fz-b lts-2n lh-2n ta-l mb-4">Technocrack</h3>
+                <p class="card-caption__text lh-x1875">Strona internetowa</p>
               </figcaption>
             </figure>
           </li>
@@ -123,19 +122,16 @@
                   height="294"
                 />
                 <div class="card__overlay">
-                  <p class="card__overlay--text">
-                    Technocrack jest popularną<br />
-                    platformą wykorzystywaną do<br />
-                    rozpowszechniania koronawirusa.<br />
-                    Firmy wykorzystują tę platformę do<br />
-                    celów szpiegowskich i ataków na niezabezpieczone serwery<br />
-                    konkurencji.
+                  <p class="card__overlay--text mlr-24">
+                    Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
+                    koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji.
                   </p>
                 </div>
               </div>
-              <figcaption class="card-caption__desc">
-                <h3 class="card-caption__hdr">Grafika New Orlean vs Golden Star</h3>
-                <p class="card-caption__text">Dizajn</p>
+              <figcaption class="card-caption__desc ptb-20 plr-24">
+                <h3 class="card-caption__hdr fw-7 fz-b lts-2n lh-2n ta-l mb-4">Grafika New Orlean vs Golden Star</h3>
+                <p class="card-caption__text lh-x1875">Dizajn</p>
               </figcaption>
             </figure>
           </li>
@@ -149,19 +145,16 @@
                   height="294"
                 />
                 <div class="card__overlay">
-                  <p class="card__overlay--text">
-                    Technocrack jest popularną<br />
-                    platformą wykorzystywaną do<br />
-                    rozpowszechniania koronawirusa.<br />
-                    Firmy wykorzystują tę platformę do<br />
-                    celów szpiegowskich i ataków na niezabezpieczone serwery<br />
-                    konkurencji.
+                  <p class="card__overlay--text mlr-24">
+                    Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
+                    koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji.
                   </p>
                 </div>
               </div>
-              <figcaption class="card-caption__desc">
-                <h3 class="card-caption__hdr">Restauracja Seafood</h3>
-                <p class="card-caption__text">Aplikacja</p>
+              <figcaption class="card-caption__desc ptb-20 plr-24">
+                <h3 class="card-caption__hdr fw-7 fz-b lts-2n lh-2n ta-l mb-4">Restauracja Seafood</h3>
+                <p class="card-caption__text lh-x1875">Aplikacja</p>
               </figcaption>
             </figure>
           </li>
@@ -170,19 +163,16 @@
               <div class="card__image">
                 <img src="./images/section3_4.jpg" alt="słuchawki" width="370" height="294" />
                 <div class="card__overlay">
-                  <p class="card__overlay--text">
-                    Technocrack jest popularną<br />
-                    platformą wykorzystywaną do<br />
-                    rozpowszechniania koronawirusa.<br />
-                    Firmy wykorzystują tę platformę do<br />
-                    celów szpiegowskich i ataków na niezabezpieczone serwery<br />
-                    konkurencji.
+                  <p class="card__overlay--text mlr-24">
+                    Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
+                    koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji.
                   </p>
                 </div>
               </div>
-              <figcaption class="card-caption__desc">
-                <h3 class="card-caption__hdr">Projekt Prime</h3>
-                <p class="card-caption__text">Marketing</p>
+              <figcaption class="card-caption__desc ptb-20 plr-24">
+                <h3 class="card-caption__hdr fw-7 fz-b lts-2n lh-2n ta-l mb-4">Projekt Prime</h3>
+                <p class="card-caption__text lh-x1875">Marketing</p>
               </figcaption>
             </figure>
           </li>
@@ -191,19 +181,16 @@
               <div class="card__image">
                 <img src="./images/section3_5.jpg" alt="pudełka" width="370" height="294" />
                 <div class="card__overlay">
-                  <p class="card__overlay--text">
-                    Technocrack jest popularną<br />
-                    platformą wykorzystywaną do<br />
-                    rozpowszechniania koronawirusa.<br />
-                    Firmy wykorzystują tę platformę do<br />
-                    celów szpiegowskich i ataków na niezabezpieczone serwery<br />
-                    konkurencji.
+                  <p class="card__overlay--text mlr-24">
+                    Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
+                    koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji.
                   </p>
                 </div>
               </div>
-              <figcaption class="card-caption__desc">
-                <h3 class="card-caption__hdr">Projekt Boxes</h3>
-                <p class="card-caption__text">Aplikacja</p>
+              <figcaption class="card-caption__desc ptb-20 plr-24">
+                <h3 class="card-caption__hdr fw-7 fz-b lts-2n lh-2n ta-l mb-4">Projekt Boxes</h3>
+                <p class="card-caption__text lh-x1875">Aplikacja</p>
               </figcaption>
             </figure>
           </li>
@@ -217,19 +204,16 @@
                   height="294"
                 />
                 <div class="card__overlay">
-                  <p class="card__overlay--text">
-                    Technocrack jest popularną<br />
-                    platformą wykorzystywaną do<br />
-                    rozpowszechniania koronawirusa.<br />
-                    Firmy wykorzystują tę platformę do<br />
-                    celów szpiegowskich i ataków na niezabezpieczone serwery<br />
-                    konkurencji.
+                  <p class="card__overlay--text mlr-24">
+                    Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
+                    koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji.
                   </p>
                 </div>
               </div>
-              <figcaption class="card-caption__desc">
-                <h3 class="card-caption__hdr">Inspiration has no Borders</h3>
-                <p class="card-caption__text">Strona internetowa</p>
+              <figcaption class="card-caption__desc ptb-20 plr-24">
+                <h3 class="card-caption__hdr fw-7 fz-b lts-2n lh-2n ta-l mb-4">Inspiration has no Borders</h3>
+                <p class="card-caption__text lh-x1875">Strona internetowa</p>
               </figcaption>
             </figure>
           </li>
@@ -243,19 +227,16 @@
                   height="294"
                 />
                 <div class="card__overlay">
-                  <p class="card__overlay--text">
-                    Technocrack jest popularną<br />
-                    platformą wykorzystywaną do<br />
-                    rozpowszechniania koronawirusa.<br />
-                    Firmy wykorzystują tę platformę do<br />
-                    celów szpiegowskich i ataków na niezabezpieczone serwery<br />
-                    konkurencji.
+                  <p class="card__overlay--text mlr-24">
+                    Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
+                    koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji.
                   </p>
                 </div>
               </div>
-              <figcaption class="card-caption__desc">
-                <h3 class="card-caption__hdr">Magazyn Limited Edition</h3>
-                <p class="card-caption__text">Dizajn</p>
+              <figcaption class="card-caption__desc ptb-20 plr-24">
+                <h3 class="card-caption__hdr fw-7 fz-b lts-2n lh-2n ta-l mb-4">Magazyn Limited Edition</h3>
+                <p class="card-caption__text lh-x1875">Dizajn</p>
               </figcaption>
             </figure>
           </li>
@@ -269,19 +250,16 @@
                   height="294"
                 />
                 <div class="card__overlay">
-                  <p class="card__overlay--text">
-                    Technocrack jest popularną<br />
-                    platformą wykorzystywaną do<br />
-                    rozpowszechniania koronawirusa.<br />
-                    Firmy wykorzystują tę platformę do<br />
-                    celów szpiegowskich i ataków na niezabezpieczone serwery<br />
-                    konkurencji.
+                  <p class="card__overlay--text mlr-24">
+                    Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
+                    koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji.
                   </p>
                 </div>
               </div>
-              <figcaption class="card-caption__desc">
-                <h3 class="card-caption__hdr">Projekt LAB</h3>
-                <p class="card-caption__text">Marketing</p>
+              <figcaption class="card-caption__desc ptb-20 plr-24">
+                <h3 class="card-caption__hdr fw-7 fz-b lts-2n lh-2n ta-l mb-4">Projekt LAB</h3>
+                <p class="card-caption__text lh-x1875">Marketing</p>
               </figcaption>
             </figure>
           </li>
@@ -295,19 +273,16 @@
                   height="294"
                 />
                 <div class="card__overlay">
-                  <p class="card__overlay--text">
-                    Technocrack jest popularną<br />
-                    platformą wykorzystywaną do<br />
-                    rozpowszechniania koronawirusa.<br />
-                    Firmy wykorzystują tę platformę do<br />
-                    celów szpiegowskich i ataków na niezabezpieczone serwery<br />
-                    konkurencji.
+                  <p class="card__overlay--text mlr-24">
+                    Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
+                    koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji.
                   </p>
                 </div>
               </div>
-              <figcaption class="card-caption__desc">
-                <h3 class="card-caption__hdr">Growing Business</h3>
-                <p class="card-caption__text">Aplikacja</p>
+              <figcaption class="card-caption__desc ptb-20 plr-24">
+                <h3 class="card-caption__hdr fw-7 fz-b lts-2n lh-2n ta-l mb-4">Growing Business</h3>
+                <p class="card-caption__text lh-x1875">Aplikacja</p>
               </figcaption>
             </figure>
           </li>
@@ -318,12 +293,12 @@
     </section>
     <!-- End section 3 - Portfolio -->
     <!-- footer -->
-    <footer class="footer">
-      <div class="container flex">
+    <footer class="footer bgc3">
+      <div class="container ms-0-a flex gap-70 ai-fs jc-fs">
         <div>
-          <a href="" class="logo-fonts"> Web<span class="studio-color-foo">Studio</span> </a>
-          <address class="footer-address">
-            <ul class="footer-font">
+          <a href="" class="logo__fonts"> Web<span class="c-0 d-ib mt-14">Studio</span> </a>
+          <address class="footer__address">
+            <ul class="footer__text d-ib w-246">
               <li>m. Warszawa, Aleje Jerozolimskie 21</li>
               <li>
                 <a href="mailto:info@example.com">info@example.com</a>
@@ -334,12 +309,12 @@
             </ul>
           </address>
         </div>
-        <div class="footer-social">
-          <h3>Dołącz do nas</h3>
+        <div id="footer-social">
+          <h3 class="c-0 fw-7 fz-s lh-x1142 tt pt-16 pb-10 ta-l ">Dołącz do nas</h3>
           <!-- social link -->
-          <ul class="link-list">
+          <ul class="link-list pt-12 pr-0 pl-0 pb-0">
             <!-- instagram link -->
-            <li class="link-list__item">
+            <li class="link-list__item d-ib pt-0 pb-0 pr-5 pl-5">
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
@@ -352,7 +327,7 @@
               </a>
             </li>
             <!-- twitter link -->
-            <li class="link-list__item">
+            <li class="link-list__item d-ib pt-0 pb-0 pr-5 pl-5">
               <a
                 href="https://twitter.com/"
                 target="_blank"
@@ -365,7 +340,7 @@
               </a>
             </li>
             <!-- facebook link -->
-            <li class="link-list__item">
+            <li class="link-list__item d-ib pt-0 pb-0 pr-5 pl-5">
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
@@ -378,7 +353,7 @@
               </a>
             </li>
             <!-- linkedin link -->
-            <li class="link-list__item">
+            <li class="link-list__item d-ib pt-0 pb-0 pr-5 pl-5">
               <a
                 href="https://pl.linkedin.com/"
                 target="_blank"

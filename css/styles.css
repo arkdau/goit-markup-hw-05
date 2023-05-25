@@ -14,13 +14,10 @@
   --bgcolor-body:  #f5f4fa;
   --font-text-primary: 'Roboto', sans-serif;
   --font-text-secondary: 'Raleway', sans-serif;
-
   --body: var(--font-text-primary);
   --ff-title: var(--font-text-primary);
 }
-
 /*-----------------------------------------------------------------------------------
-
 	0.	CSS Reset
   1.  CSS-Core Remedies 
 	2.	Document Setup
@@ -36,9 +33,7 @@
       # Buttons
       # Modal
   11. Atomic class
-
 ----------------------------------------------------------------------------------- */
-
 /* 0. CSS Reset ------------------------------ */ 
 
 html {
@@ -47,7 +42,6 @@ html {
   font-size: calc(1em + 0vw);
   line-height: 1.5;
 }
-
 *,
 *::before,
 *::after {
@@ -56,11 +50,9 @@ html {
   margin: 0;
   padding: 0;
 }
-
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
@@ -103,32 +95,25 @@ rticle, aside, details, figcaption, figure, footer, header, hgroup, main, nav, s
 button {
   cursor: pointer;
 }
-
 body {
   font-family: var(--font-text-primary);
-  /* font-size: 22px; */
 }
-
 img {
 	display: block;
   max-width: 100%;
 }
-
 .section {
   padding: 94px 0;
 }
-
 header {
   padding: 30px 0;
   border-bottom: 1px solid #ececec;
   width: 100%;
 }
-
 footer {
   width: 100%;
   padding: 60px 0;
 }
-
 caption, figcaption, label, legend {
   line-height: 1.375;
 }
@@ -138,20 +123,16 @@ caption, figcaption, label, legend {
 .container {
   margin: 0 auto;
   max-width: 1200px;
-  /* width: 1200px; */
-  /* width: 85%; */
 }
-
 .flex {
   display: flex;
   align-items: center;
   gap: 30px;
   justify-content: space-between;
 }
-
 .wrap {
   flex-wrap: wrap;
-  padding: 50px 0 0 0;
+  padding-top: 50px;
 }
 
 /* 4. Element Base ----------------------------- */
@@ -165,7 +146,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
 h1 {
   font-weight: 900;
   font-size: 2.75rem;
@@ -174,13 +154,11 @@ h1 {
   text-transform: uppercase;
   color: var(--color-text-light);
 }
-
 h2 {
   font-weight: 700;
   font-size: 2.25rem;
   line-height: 1.17;
 }
-
 h3 {
   font-weight: 500;
   font-size: 1rem;
@@ -190,24 +168,17 @@ h3 {
 /* 6.	Site Navigation ---------------------------- */
 
 .menu__link {
-  /* text-decoration: none; */
   color: var(--color-text-dark);
-  /* transition-property: color; */
-  /* transition-duration: 250ms; */
-  /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
-
 .menu__link:hover,
 .menu__link:focus,
 .menu__link:active {
   color: var(--color-text-primary);
 }
-
 .is-active {
   position: relative;
   color: var(--color-text-primary);
 }
-
 .is-active::after {
   content: '';
   position: absolute;
@@ -218,12 +189,9 @@ h3 {
   background-color: var(--color-text-primary);
   border-radius: 2px;
 }
-
 .contact {
-  /* line-height: 1.125rem; */
   line-height: 16px;
 }
-
 .contact__link {
   font-weight: 500;
   font-size: 0.875rem;
@@ -231,34 +199,12 @@ h3 {
   display: inline-block;
   line-height: normal;
   color: var(--color-text-secondary);
-  /* transition-property: color, fill; */
-  /* transition-duration: 250ms; */
-  /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
-
-
-
-/* font-weight: 400; */
-/* font-size: 14px; */
-/* line-height: 24px; */
-
-/* or 171% */
-/* letter-spacing: 0.03em; */
-/* text-decoration-line: underline; */
-
-/* color: rgba(255, 255, 255, 0.6); */
-
-
-
-
-
-
 .contact__icon {
   margin-right: 10px;
   display: inline-block;
   line-height: normal;
 }
-
 .contact__link:hover {
   --color-icon-select: var(--color-text-primary);
   color: var(--color-text-primary);
@@ -281,49 +227,40 @@ h3 {
     0 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
 }
-
 .card--light {
   background: #ffffff;
 }
-
 .card__logo {
   box-sizing: border-box;
   width: 170px;
   border: 1px solid #afb1b8;
   display: inline-block;
 }
-
 .card__logo:hover,
 .link-list__link:hover {
   --color-icon-select: #2196f3;
   --color-icon: #fff;
 }
-
 .card__logo:hover {
   border-color: #2196f3;
 }
-
 .card__thumb {
   position: relative;
   display: inline-block;
-  z-index: -1;
+  /* z-index: -1; */
 }
-
 .card__icon {
   width: 270px;
-  height: 120px;
+  /* height: 120px; */
   display: inline-flex;
 }
-
 .card__icon--dark {
   background: #f5f4fa;
 }
-
 .card-caption__hdr {
   line-height: 19px;
   margin-bottom: 10px;
 }
-
 .card-caption__label {
   position: absolute;
   left: 0;
@@ -337,31 +274,26 @@ h3 {
   margin: 0;
   background: rgba(47, 48, 58, 0.8);
 }
-
 .card-caption__desc {
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
-
 .card-caption__text {
   line-height: 1.1875;
   letter-spacing: 0.03em;
   color: #757575;
 }
-
 .card__shadow:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
 .card__image {
   position: relative;
   width: 370px;
-  height: 294px;
+  /* height: 294px; */
   overflow: hidden;
 }
-
 .card__overlay {
   position: absolute;
   top: 0;
@@ -376,31 +308,25 @@ h3 {
   transition-duration: 250ms;
   transition-timing-function: ease;
 }
-
 .card__item:hover .card__overlay {
   transform: translateY(0);
 }
-
 .card__overlay--text {
   color: var(--color-text-light);
   font-size: 1.125em;
   line-height: 1.6;
 }
-
-
 .link-list__link {
   align-items: center;
   background-color: transparent;
   display: flex;
   flex-direction: column;
 }
-
 /* 9. Site Footer ------------------------- */
 
 .footer__address {
   padding-top: 20px;
 }
-
 .footer__text {
   font-style: normal;
   font-size: 0.875em;
@@ -408,18 +334,15 @@ h3 {
   letter-spacing: 0.03em;
   color: var(--color-text-light);
 }
-
 .footer__text li {
   padding-bottom: 9px;
 }
-
 .footer__text > li > a {
   color: rgba(255, 255, 255, 0.6);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer__text > li > a:hover {
   color: var(--color-text-primary);
 }
@@ -431,49 +354,61 @@ h3 {
 .btn {
   gap: 0.5em;
 }
-
 .btn__body {
   padding: 0.375em 1.375em;
   border-radius: 4px;
   border: none;
-  /* background: #f5f4fa; */
   font-family: var(--font-text-primary);
   font-size: 1em; 
   line-height: 1.625;
   letter-spacing: 0.03em;
   color: var(--color-text-dark);
 }
-
 .btn__body--big {
-  /* background-color: #2196f3; */
-  /* color: #fff; */
   font-weight: 700;
   line-height: 1.875;
   letter-spacing: 0.06em;
   padding: 0.625em 2.5625em;
 }
-
 .btn__body--blue {
   background-color: #2196f3;
   color: #fff;
 }
-
 .btn__body--grey {
   background-color: #f5f4fa;
   color: var(--color-text-dark);
 }
-
 .btn__body--blue:hover,
 .btn__body--blue:focus {
   color: #2196f3;
   background: var(--bgcolor-light);
 }
-
 .btn__body--grey:hover,
 .btn__body--grey:focus {
   color: #fff;
   background: var(--bgcolor-select);
 }
+
+/* -Modal- # # # # # # # # # # # # # # # */ 
+
+/* The Modal (background) */
+/* .modal { */
+  /* position: relative; */
+  /* padding: 2rem 1rem; */
+  /* box-sizing: border-box; */
+  /* width: 528px; */
+  /* height: 581px; */
+  /* background-color: #fff; */
+  /* cursor: initial; */
+  /* margin: auto; */
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), */
+    /* 0px 2px 1px rgba(0, 0, 0, 0.2); */
+  /* modal animation below */
+  /* transform: translate(auto, auto) scale(1); */
+  /* transition-property: transform; */
+  /* transition-duration: 10s; */
+  /* transition-timing-function: ease; */
+/* } */
 
 .backdrop {
   cursor: not-allowed;
@@ -481,25 +416,33 @@ h3 {
   background-color: hsla(0, 0%, 0%, 0.5);
   position: fixed;
   left: 0;
-  right: 0;
+  /* right: 0; */
   top: 0;
-  bottom: 0;
+  /* bottom: 0; */
+  width: 100%;
+  height: 100%;
 }
 
-/* -Modal- # # # # # # # # # # # # # # # */ 
-
-/* The Modal (background) */
 .modal {
-  position: relative;
-  padding: 2rem 1rem;
-  box-sizing: border-box;
+  cursor:pointer ;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 528px;
-  height: 581px;
-  background-color: #fff;
-  cursor: initial;
-  margin: auto;
+  min-height: 581px;
+  background-color: var(--bgcolor-light);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  /* modal animation below */
+  transform: translate(-50%, -50%) scale(1);
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.4);
 }
 
 .close-btn {
@@ -513,13 +456,11 @@ h3 {
   border-radius: 50%;
   cursor: pointer;
 }
-
 .is-hidden {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
 }
-
 .icon {
   display: inline-block;
   width: 1em;
@@ -528,11 +469,9 @@ h3 {
   stroke: currentColor;
   fill: currentColor;
 }
-
 .icon-cross {
   color: rgba(0, 0, 0, 0.1);
 }
-
 .logo__fonts {
   font-family: var(--font-text-secondary);
   font-weight: 700;
@@ -542,9 +481,7 @@ h3 {
   color: var(--color-text-primary);
 }
 
-
 /* Atomic ------------------------------ */ 
-
 /* Emmet name */
 .d-f { display: flex; }
 .d-ib { display: inline-block; }
@@ -626,7 +563,6 @@ h3 {
 .maw { max-width: 1600px; }
 .ms-0-a { margin: 0 auto; }
 .bd-n { border: none; }
-
 /* Fonts */
 .fw-4 { font-weight: 400; }
 .fw-5 { font-weight: 500; }
@@ -677,3 +613,4 @@ h3 {
 .trs-bd { transition-property: border; }
 .trs-f-bgc { transition-property: fill, background-color; }
 .trs-bxsh { transition-property: box-shadow; }
+

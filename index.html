@@ -16,14 +16,20 @@
     />
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
+  <!-- body -->
+  <body>
     <!-- header  -->
     <header class="text-component__small text-component--font-md text-component--tight">
       <div class="container flex">
         <nav class="flex flex--menu-gap">
-          <a href="" class="logo__font">Web<span class="logo__font logo__font--black">Studio</span></a>
+          <a href="" class="logo__font"
+            >Web<span class="logo__font logo__font--black">Studio</span></a
+          >
           <ul class="flex menu__list">
             <li class="menu__item">
-            <a href="./index.html" class="menu__link is-active">Agencja</a>
+              <a href="./index.html" class="menu__link is-active">Agencja</a>
+            </li>
+
             <li class="menu__item">
               <a href="./portfolio.html" class="menu__link">Portfolio</a>
             </li>
@@ -53,7 +59,7 @@
     <!-- end header -->
     <main id="main">
       <section class="hero">
-        <div class="hero__content ">
+        <div class="hero__content">
           <h1 class="hero__title">
             EFEKTYWNE ROZWIĄZANIA<br />
             DLA WASZEGO BIZNESU
@@ -61,21 +67,21 @@
           <button type="button" class="btn" data-modal-open>Zamów usługe</button>
         </div>
       </section>
-          <!-- Section 0 - Nasze atrybuty  -->
+      <!-- Section 0 - Nasze atrybuty  -->
       <section class="section">
         <div class="container">
           <ul class="flex">
             <li>
               <div class="card__icon">
-                <svg  width="70" height="70">
+                <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-                <h3 class="card__title-primary">LOREM IPSUM</h3>
-                <p class="card__description-primary">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-                  sodales dui. Interdum et malesuada 
-                </p>
+              <h3 class="card__title-primary">LOREM IPSUM</h3>
+              <p class="card__description-primary">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                sodales dui. Interdum et malesuada
+              </p>
             </li>
             <li>
               <div class="card__icon">
@@ -129,20 +135,20 @@
                 height="294"
                 class="block"
               />
-            <h3 class="card__title-primary card__label">Aplikacje komputerowe</h3>
+              <h3 class="card__title-primary card__label">Aplikacje komputerowe</h3>
             </li>
             <li class="card__thumb">
               <img
                 src="./images/section1_2.jpg"
                 alt="Laptop i smartfon - narzędzia współczesnego programisty"
                 height="294"
-              class="block"
+                class="block"
               />
-            <h3 class="card__title-primary card__label">Aplikacje mobilne</h3>
+              <h3 class="card__title-primary card__label">Aplikacje mobilne</h3>
             </li>
             <li class="card__thumb">
               <img src="./images/section1_3.jpg" alt="Paleta kolorów" height="294" class="block" />
-            <h3 class="card__title-primary card__label">Rozwiązania graficzne</h3>
+              <h3 class="card__title-primary card__label">Rozwiązania graficzne</h3>
             </li>
           </ul>
         </div>
@@ -156,9 +162,9 @@
             <li>
               <figure class="card">
                 <img src="./images/section2_1.jpg" alt="John Doe - Product Designer" height="260" />
-                <figcaption class="card-caption__desc card-caption__desc--1">
-                  <h3 class="card-caption__hdr card-caption__hdr--2">John Doe</h3>
-                  <p class="card-caption__text card-caption__text--2">Product Designer</p>
+                <figcaption class="card__caption">
+                  <h3 class="card__title-secondary">John Doe</h3>
+                  <p class="card__description-secondary">Product Designer</p>
                   <!-- social link -->
                   <ul class="link-list">
                     <!-- instagram link -->
@@ -226,8 +232,8 @@
                   height="260"
                 />
                 <figcaption class="card-caption__desc card-caption__desc--1">
-                  <h3 class="card-caption__hdr card-caption__hdr--2">John Doe</h3>
-                  <p class="card-caption__text card-caption__text--2">Frontend Developer</p>
+                  <h3 class="card__title-secondary">John Doe</h3>
+                  <p class="card__description-secondary">Frontend Developer</p>
                   <!-- social link -->
                   <ul class="link-list">
                     <!-- instagram link -->
@@ -291,8 +297,8 @@
               <figure class="card">
                 <img src="./images/section2_3.jpg" alt="John Doe - Marketing" height="260" />
                 <figcaption class="card-caption__desc card-caption__desc--1">
-                  <h3 class="card-caption__hdr card-caption__hdr--2">John Doe</h3>
-                  <p class="card-caption__text card-caption__text--2">Marketing</p>
+                  <h3 class="card__title-secondary">John Doe</h3>
+                  <p class="card__description-secondary">Marketing</p>
                   <!-- social link -->
                   <ul class="link-list">
                     <!-- instagram link -->
@@ -356,8 +362,8 @@
               <figure class="card">
                 <img src="./images/section2_4.jpg" alt="John Doe - UI Designer" height="260" />
                 <figcaption class="card-caption__desc card-caption__desc--1">
-                  <h3 class="card-caption__hdr card-caption__hdr--2">John Doe</h3>
-                  <p class="card-caption__text card-caption__text--2">UI Designer</p>
+                  <h3 class="card__title-secondary">John Doe</h3>
+                  <p class="card__description-secondary">UI Designer</p>
                   <!-- social link -->
                   <ul class="link-list">
                     <!-- instagram link -->
@@ -431,91 +437,91 @@
           <!-- logo client 1 -->
           <li class="card__logo">
             <!-- <figure class="card__logo"> -->
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="link-list__link"
-              >
-                <svg width="106" height="60">
-                  <use href="./images/icons.svg#icon-Logo_client_1"></use>
-                </svg>
-              </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-list__link"
+            >
+              <svg width="106" height="60">
+                <use href="./images/icons.svg#icon-Logo_client_1"></use>
+              </svg>
+            </a>
             <!-- </figure> -->
           </li>
           <!-- logo client 2 -->
           <li class="card__logo">
             <!-- <figure class="card__logo"> -->
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="link-list__link"
-              >
-                <svg width="106" height="60">
-                  <use href="./images/icons.svg#icon-Logo_client_2"></use>
-                </svg>
-              </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-list__link"
+            >
+              <svg width="106" height="60">
+                <use href="./images/icons.svg#icon-Logo_client_2"></use>
+              </svg>
+            </a>
             <!-- </figure> -->
           </li>
           <!-- logo client 3 -->
           <li class="card__logo">
             <!-- <figure class="card__logo"> -->
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="link-list__link"
-              >
-                <svg width="106" height="60">
-                  <use href="./images/icons.svg#icon-Logo_client_3"></use>
-                </svg>
-              </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-list__link"
+            >
+              <svg width="106" height="60">
+                <use href="./images/icons.svg#icon-Logo_client_3"></use>
+              </svg>
+            </a>
             <!-- </figure> -->
           </li>
           <!-- logo client 4 -->
           <li class="card__logo">
             <!-- <figure class="card__logo"> -->
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="link-list__link"
-              >
-                <svg width="106" height="60">
-                  <use href="./images/icons.svg#icon-Logo_client_4"></use>
-                </svg>
-              </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-list__link"
+            >
+              <svg width="106" height="60">
+                <use href="./images/icons.svg#icon-Logo_client_4"></use>
+              </svg>
+            </a>
             <!-- </figure> -->
           </li>
           <!-- logo client 5 -->
           <li class="card__logo">
             <!-- <figure class="card__logo"> -->
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="link-list__link"
-              >
-                <svg width="106" height="60">
-                  <use href="./images/icons.svg#icon-Logo_client_5"></use>
-                </svg>
-              </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-list__link"
+            >
+              <svg width="106" height="60">
+                <use href="./images/icons.svg#icon-Logo_client_5"></use>
+              </svg>
+            </a>
             <!-- </figure> -->
           </li>
           <!-- logo client 6 -->
           <li class="card__logo">
             <!-- <figure class="card__logo" style="margin-right: 0"> -->
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="link-list__link"
-              >
-                <svg width="106" height="60">
-                  <use href="./images/icons.svg#icon-Logo_client_6"></use>
-                </svg>
-              </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-list__link"
+            >
+              <svg width="106" height="60">
+                <use href="./images/icons.svg#icon-Logo_client_6"></use>
+              </svg>
+            </a>
             <!-- </figure> -->
           </li>
         </ul>
@@ -525,25 +531,30 @@
 
     <!-- footer -->
     <footer class="footer">
-      <div class="container flex">
+      <div class="container flex footer__flex">
         <div>
-          <a href="" class="logo-fonts"> Web<span class="studio-color-foo">Studio</span> </a>
-          <address class="footer-address">
-            <ul class="footer-font">
-              <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-              <li>
-                <a href="mailto:info@example.com">info@example.com</a>
+          <a href="" class="logo__font"
+            >Web<span class="logo__font logo__font--white">Studio</span></a
+          >
+          <!-- <a href="" class="logo-fonts"> Web<span class="studio-color-foo">Studio</span> </a> -->
+          <address class="footer__address">
+            <ul class="footer__address-list">
+              <li class="footer__address-item">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li class="footer__address-item">
+                <a class="footer__address-link" href="mailto:info@example.com">info@example.com</a>
               </li>
-              <li>
-                <a href="tel:+48&nbsp111&nbsp111&nbsp111">+48 111 111 111</a>
+              <li class="footer__address-item">
+                <a class="footer__address-link" href="tel:+48&nbsp111&nbsp111&nbsp111"
+                  >+48 111 111 111</a
+                >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-social">
-          <h3>Dołącz do nas</h3>
+        <div class="footer__social">
+          <h3 class="footer__social-title">Dołącz do nas</h3>
           <!-- social link -->
-          <ul class="link-list">
+          <ul class="link-list link-list--padding">
             <!-- instagram link -->
             <li class="link-list__item">
               <a
@@ -601,17 +612,18 @@
         </div>
       </div>
     </footer>
+    <!-- end footer -->
     <!-- modal-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-      <button type="button" class="close-btn" data-modal-close>
-         <svg class="icon icon-cross">
-          <!-- <use href="./fonts/icomoon.svg#cross"></use>  -->
-          <use href="./images/icons.svg#icon-cross"></use>
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="icon icon-cross">
+            <!-- <use href="./fonts/icomoon.svg#cross"></use>  -->
+            <use href="./images/icons.svg#icon-cross"></use>
             <!-- &#xea0f; -->
-          <!-- </text> -->
-        </svg> 
-      </button> 
+            <!-- </text> -->
+          </svg>
+        </button>
       </div>
     </div>
     <!-- end modal-->

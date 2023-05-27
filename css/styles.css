@@ -70,7 +70,9 @@ body {
   outline: 2px var(--style-outline) var(--color-outline-section);
 }
 
-.block { display: block; }
+.block {
+  display: block;
+}
 /* typography ------------------------- */
 h1 {
   font-weight: 900;
@@ -154,6 +156,11 @@ header {
 }
 .logo__font--black {
   color: #000;
+}
+.logo__font--white {
+  color: #fff;
+  /* display: inline-block; */
+  /* margin-top: 14px; */
 }
 /* navigation -------------------------- */
 .menu__list {
@@ -300,9 +307,6 @@ header {
 
 .card__title-primary {
   font-weight: 700;
-  /* font-size: 1.125em; */
-  /* line-height: 2; */
-  /* letter-spacing: 0.06em; */
   text-transform: capitalize;
   text-align: left;
   font-size: 0.875em;
@@ -310,6 +314,42 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+.card__title-secondary {
+  font-weight: 500;
+  /* text-transform: capitalize; */
+  /* text-align: left; */
+  font-size: 1rem;
+  line-height: 1.1875;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.card__title-third {
+  font-weight: 700;
+  /* text-transform: capitalize; */
+  text-align: left;
+  font-size: 1.125rem;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+
+.card__title-third--mb {
+  margin-bottom: 0;
+}
+
+.card__caption {
+  padding-top: 30px;
+  border: none;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+
+.card__caption--padding {
+  padding: 20px 24px;
 }
 
 .card-caption__hdr--2 {
@@ -325,8 +365,6 @@ header {
 .card-caption__hdr--weight {
   font-weight: 700;
 }
-
-
 
 .card-caption__desc {
   padding: 20px 24px;
@@ -357,6 +395,19 @@ header {
   color: #757575;
   font-size: 0.875em;
   line-height: 1.71;
+}
+
+.card__description-secondary {
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: #757575;
+  font-size: 1rem;
+  line-height: 1.1875;
+  text-align: center;
+}
+.card__description-secondary--lh {
+  line-height: 1.875;
+  text-align: left;
 }
 
 .card-caption__text--2 {
@@ -466,14 +517,13 @@ header {
 /*************************************
  *  Page - portfolio
  */
-
-.btn-nav {
+.btn__nav {
   gap: 8px;
   justify-content: center;
 }
 
 /* portfolio btn - nawigacyjne */
-.btn-nav-font {
+.btn__nav-body {
   font-family: var(--font-text-primary);
   font-size: 1em;
   line-height: 1.625;
@@ -481,15 +531,12 @@ header {
   letter-spacing: 0.03em;
   border-radius: 4px;
   padding: 6px 22px;
-}
-
-.btn-nav-bg {
   color: var(--color-text-dark);
   background: #f5f4fa;
 }
 
-.btn-nav-bg:hover,
-.btn-nav-bg:focus {
+.btn__nav-body:hover,
+.btn__nav-body:focus {
   color: #fff;
   background: var(--bgcolor-select);
   /* shadow-middle */
@@ -501,72 +548,55 @@ header {
 /*************************************
  *    foooter  
  */
-
 .footer {
   padding: 60px 0 60px;
   background: var(--bgcolor-primary);
 }
-
-.footer-address {
+.footer__address {
   padding-top: 20px;
 }
-
-.studio-color-foo {
-  color: #fff;
-  display: inline-block;
-  margin-top: 14px;
-}
-
-.footer-font {
+.footer__address-list {
   display: inline-block;
   font-family: 'Roboto';
   font-style: normal;
   font-size: 0.875em;
-  line-height: 1.71;
+  line-height: 1.7142;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255);
   width: 246px;
 }
-
-.footer-font li {
+.footer__address-item {
   padding-bottom: 9px;
 }
-
-.footer-font > li > a {
+.footer__address-link {
   color: rgba(255, 255, 255, 0.6);
 }
-
-.footer-font > li > a:hover {
+.footer__address-link:hover {
   color: var(--color-text-primary);
 }
-
-.footer-social ul {
+.link-list--padding {
   padding: 12px 0 0;
 }
-
-.footer-social .link-list__item {
+.footer__social .link-list__item {
   padding: 0 5px;
 }
-
-.footer-social h3 {
+.footer__social-title {
   color: var(--color-text-light);
   font-style: normal;
   font-weight: 700;
-  font-size: 0.875em;
-  line-height: 1em;
+  font-size: 0.875rem;
+  line-height: 1.1428;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-top: 1em;
   padding-bottom: 0.625em;
   text-align: left;
 }
-
-.footer .flex {
+.footer__flex {
   gap: 70px;
   justify-content: flex-start;
   align-items: flex-start;
 }
-
 .backdrop {
   cursor: not-allowed;
   display: flex;
@@ -577,8 +607,8 @@ header {
   top: 0;
   bottom: 0;
 }
-
-/* The Modal (background) */
+/* the modal ------------------------------ */
+/* the modal (background) */
 .modal {
   position: relative;
   padding: 2rem 1rem;

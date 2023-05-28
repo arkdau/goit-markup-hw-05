@@ -14,7 +14,7 @@
   --font-text-primary: 'Roboto', sans-serif;
   --font-text-secondary: 'Raleway', sans-serif;
 }
-/* Reset ------------------------------ */ 
+/* Reset ------------------------------ */
 *,
 *::before,
 *::after {
@@ -54,7 +54,7 @@ body {
 }
 .wrap {
   flex-wrap: wrap;
-  padding: 50px 0 0 0;
+  padding-top: 50px;
   outline: 2px var(--style-outline) var(--color-outline-section);
 }
 .block {
@@ -64,14 +64,14 @@ body {
 h1 {
   font-weight: 900;
   font-size: 2.75rem;
-  line-height: 1.36;
+  line-height: 1.3636;
   text-align: center;
   letter-spacing: 0.06em;
 }
 h2 {
   font-weight: 700;
   font-size: 2.25rem;
-  line-height: 1.16;
+  line-height: 1.1666;
   text-align: center;
   letter-spacing: 0.03em;
   padding-bottom: 50px;
@@ -84,44 +84,44 @@ h3 {
   letter-spacing: 0.03em;
 }
 /* .text-component { */
-  /* font-size: 1rem; */
-  /* font-weight: 700; */
-  /* letter-spacing: 0.03em; */
-  /* line-height: 1.875; */
+/* font-size: 1rem; */
+/* font-weight: 700; */
+/* letter-spacing: 0.03em; */
+/* line-height: 1.875; */
 /* } */
 /* .text-component__small { */
-  /* font-size: 0.875rem; */
-  /* line-height: 1.1428; */
+/* font-size: 0.875rem; */
+/* line-height: 1.1428; */
 /* } */
 /* .text-component--tight { */
-  /* letter-spacing: 0.02em; */
+/* letter-spacing: 0.02em; */
 /* } */
 /* .text-component--wide { */
-  /* letter-spacing: 0.06em; */
+/* letter-spacing: 0.06em; */
 /* } */
 /* .text-component--font-sm { */
-  /* font-weight: 400; */
+/* font-weight: 400; */
 /* } */
 /* .text-component--font-md { */
-  /* font-weight: 500; */
+/* font-weight: 500; */
 /* } */
 /* .text-component--font-lg { */
-  /* font-weight: 700; */
+/* font-weight: 700; */
 /* } */
 /* .text-component--font-xl { */
-  /* font-weight: 900; */
+/* font-weight: 900; */
 /* } */
 /* .text-component--size-sm { */
-  /* font-size: 400; */
+/* font-size: 400; */
 /* } */
 /* .text-component--size-md { */
-  /* font-size: 500; */
+/* font-size: 500; */
 /* } */
 /* .text-component--size-lg { */
-  /* font-size: 700; */
+/* font-size: 700; */
 /* } */
 /* .text-component--size-xl { */
-  /* font-size: 900; */
+/* font-size: 900; */
 /* } */
 /* header ----------------------------- */
 header {
@@ -188,22 +188,23 @@ header {
 .contact__icon {
   margin-right: 10px;
 }
+/* main - hero ------------------------------ */
 .hero {
-  height: 600px;
+  /* height: 600px; */
   max-width: 1600px;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(121, 85, 85, 0.3) 25%, rgba(4, 110, 185, 0.1)),
-    url('./../images/header.jpg');
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4) 25%, rgba(47, 48, 58, 0.2)),
+    url('./../images/hero-main.jpg');
 }
 .hero__content {
-  padding-top: 200px;
+  padding: 200px 0;
 }
 .hero__title {
   text-transform: uppercase;
   color: var(--color-text-light);
 }
 /* btn - Zamów usługę    */
-.btn {
+.hero__btn {
   background: #2196f3;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -217,7 +218,7 @@ header {
   color: #ffffff;
   margin: 30px auto 0px;
   padding: 10px 41px;
-  font-size: 1em;
+  font-size: 1rem;
 }
 /* Section - 0 ------------------------------ */
 .card {
@@ -248,7 +249,7 @@ header {
   display: inline-block;
   z-index: -1;
 }
-.card__icon {
+.card__box {
   background: #f5f4fa;
   border-radius: 4px;
   width: 270px;
@@ -256,7 +257,7 @@ header {
   display: inline-flex;
   margin-bottom: 30px;
 }
-.card__icon svg {
+.card__icon {
   margin: 25px auto 25px auto;
 }
 .card__title-primary {
@@ -347,8 +348,7 @@ header {
   color: var(--color-text-light);
   font-size: 1.125em;
   line-height: 1.6;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 0 24px;
 }
 .card__label {
   position: absolute;
@@ -365,7 +365,7 @@ header {
 .section--pt {
   padding-top: 0;
 }
-/* Section - 2 ------------------------------ */  
+/* Section - 2 ------------------------------ */
 /* Nasz zespół  */
 .link-list {
   margin: 0;
@@ -408,7 +408,7 @@ header {
     0 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-/* foooter ------------------------------ */  
+/* foooter ------------------------------ */
 .footer {
   padding: 60px 0 60px;
   background: var(--bgcolor-primary);
@@ -436,7 +436,7 @@ header {
   color: var(--color-text-primary);
 }
 .link-list--padding {
-  padding: 12px 0 0;
+  padding-top: 12px;
 }
 .footer__social .link-list__item {
   padding: 0 5px;
